@@ -7,6 +7,9 @@ gem 'rails', '3.2.3'
 
 gem 'pg'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 2.10.0'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,3 +39,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test do
+  gem 'capybara', '~> 1.1.2'
+end
