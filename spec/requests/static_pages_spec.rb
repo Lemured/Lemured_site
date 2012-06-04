@@ -40,4 +40,17 @@ describe "StaticPages" do
                                 :text => "Lemured | About Us")
     end
   end
+
+  describe "Contact Page" do
+    it "should have the h1 'Contact Us'" do
+      visit '/static_pages/contact'
+      page.should have_selector( 'h1', :text => 'Contact Us')
+    end
+
+    it "should have the title 'Contact Us'" do
+      visit '/static_pages/contact'
+      page.should have_selector('title',
+                                :text => "Lemured | Contact Us")
+    end
+  end
 end

@@ -10,6 +10,7 @@ gem 'pg'
 group :development, :test do
   gem 'rspec-rails', '~> 2.10.0'
   gem 'annotate', '~> 2.4.1.beta'
+  gem 'guard-rspec', '~> 0.5.5'
 end
 
 # Gems used only for assets and not required
@@ -42,5 +43,8 @@ gem 'bcrypt-ruby', '~> 3.0.1'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
+  gem 'rspec-rails', '~> 2.10.0'
   gem 'capybara', '~> 1.1.2'
+  gem 'rb-inotify', '~> 0.8.8'
+  gem 'libnotify', '~> 0.5.9'
 end
